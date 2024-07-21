@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-foreground-dark: #868686;
+  --color-foreground: #fff1f1f1;
+  --color-background-dark: #181818;
+  --color-background-lite: #2e2e2e;
+  --color-primary: #22a7f1;
+  --color-background-hover: #ff3e3e40;
+  --color-border: #393939;
+  --color-border-hover: #ff3e3e40;
+}
+
+* {
+  color: var(--color-foreground);
+  background: var(--color-background-dark);
+}
