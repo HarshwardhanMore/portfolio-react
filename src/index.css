@@ -4,16 +4,31 @@
 
 :root {
   --color-foreground-dark: #868686;
-  --color-foreground: #fff1f1f1;
+  --color-foreground: #F3F3F3;
   --color-background-dark: #181818;
-  --color-background-lite: #2e2e2e;
-  --color-primary: #22a7f1;
+  --color-background-lite: #1e1e1f;
+  --color-primary: #0098FF;
   --color-background-hover: #ff3e3e40;
-  --color-border: #393939;
+  --color-border: #2e2e2e;
   --color-border-hover: #ff3e3e40;
 }
 
 * {
   color: var(--color-foreground);
   background: var(--color-background-dark);
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  border-top: 3px solid var(--color-primary) !important;
+  background-color: var(--color-background-lite) !important;
+  z-index: 2;
+}
+
+.ant-tabs-tab {
+  border-top: 3px solid transparent !important;
+  background-color: transparent !important;
+}
+
+*:focus {
+  outline: none !important;
 }

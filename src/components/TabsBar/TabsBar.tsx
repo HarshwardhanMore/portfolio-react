@@ -13,6 +13,8 @@ const TabsBar = (props: any) => {
   const activeTabKey = useTabsStore((state: any) => state.activeTabKey);
   const setActiveTabKey = useTabsStore((state: any) => state.setActiveTabKey);
 
+  console.log('TABS ::: ', tabs);
+
   const onChange = (newActiveKey: string) => {
     setActiveTabKey(newActiveKey);
   };

@@ -6,6 +6,7 @@ import LeftMenuBar from "../LeftMenuBar/LeftMenuBar";
 import SideMenuBar from "../SideBar/SideBar";
 import TabsBar from "../TabsBar/TabsBar";
 import TopMenuBar from "../TopMenuBar/TopMenuBar";
+import BottomMenuBar from "../BottomMenuBar/BottomMenuBar";
 
 const Window = () => {
   return (
@@ -21,6 +22,7 @@ const Window = () => {
           </div>
         </div>
       </div>
+      <BottomMenuBar />
     </div>
   );
 };
