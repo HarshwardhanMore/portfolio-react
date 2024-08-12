@@ -387,6 +387,11 @@ const SideMenuBar = (props: any) => {
       ],
     },
     {
+      title: "slider.tsx",
+      key: "slider.tsx",
+      icon: <Icon image="typescript.png"/>,
+    },
+    {
       title: ".gitignore",
       key: "/gitignore",
       icon: <Icon image="git.png"/>,
@@ -413,9 +418,13 @@ const SideMenuBar = (props: any) => {
     const isAlreadyExists =
       tabs && tabs.some((item: any) => item.key === info.node.key);
     if (!isAlreadyExists) {
-      setTabs([...tabs, { label: info.node.title, key: info.node.key }]);
+      if (String(info.node.title).split('.').length > 1) {
+        setTabs([...tabs, { label: info.node.title, key: info.node.key }]);
+      }
     }
-    setActiveTabKey(info.node.key);
+    if (String(info.node.title).split('.').length > 1) {
+      setActiveTabKey(info.node.key);
+    }
   };
 
   return (

@@ -63,7 +63,7 @@ const TabsBar = (props: any) => {
   };
 
   return (
-    <div className=" w-full h-10 bg-background-dark border-b border-border">
+    <div className="flex-grow h-10 bg-background-dark border-b border-border">
       <Tabs
         type="editable-card"
         onChange={onChange}
